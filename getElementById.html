@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>JavaScript</title>
+    </head>
+    <body>
+        <p id="p1">Rengi Değişecek buranın</p>
+        <button onmouseover="mouseOver()" onmouseout="mouseOut()" onclick="renkDegistir()">Tıkla</button>
+
+        <script>
+          function renkDegistir()
+          {
+              var element = document.getElementById("p1");
+              element.style.color = "red";
+          }
+          function mouseOver()
+          {
+              var element = document.getElementById("p1");
+              element.innerHTML = "Ebubekir Doğan";
+          }
+          function mouseOut()
+          {
+              var element = document.getElementById("p1");
+              element.innerHTML = "Rengi Değişecek buranın";
+          }
+         </script>
+
+    </body>
+</html>

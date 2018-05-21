@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>do while döngüsü</title>
+ </head>
+  <body>
+   <script language="JavaScript">
+
+   var kitap=20; 
+   var cd=30; 
+   var kaset=15;
+
+   do {
+ 
+       var kitapistek =prompt ("Kaç tane kitap almak istiyorsunuz ?" , "lütfen rakam giriniz");
+       var cdistek= prompt ("Kaç tane cd almak istiyorsunuz ?" , "lütfen rakam giriniz");
+       var kasetistek= prompt ("Kaç tane kaset almak istiyorsunuz ?" , "lütfen rakam giriniz");
+
+       var kitaptutar=kitapistek*kitap;
+       var cdtutar=cdistek*cd;
+       var kasettutar=kasetistek*kaset;
+       var toplamtutar = kitaptutar+cdtutar+kasettutar;
+
+       document.write ("<br>" ,"<br>" ,kitapistek ," tane kitap ", cdistek ," tane cd " ,kasetistek , " tane kaset sipariþiniz alýnmýþtýr ", "<br>");
+       document.write ("<br>" , "Aldýðýnýz ürünlerin toplam tutarý = ",toplamtutar);
+       var istek =prompt("Baþka ürünlerde satýn almak istiyor musunuz ?", "e veya h giriniz");
+      }
+
+   while (istek=="e")
+
+   document.write ("<br>" ,"Bizden alýþveriþ yaptýðýnýz için teþekkürler")
+
+
+</script>
+</body>
+</html>
+

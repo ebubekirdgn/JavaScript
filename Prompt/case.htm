@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>Switch case döngüsü</title>
+ </head>
+  <body>
+  <script language="JavaScript">
+
+     var cevap;
+     cevap = prompt ("Çýkmak istiyor musunuz " ,"Evet için E veya e , Hayýr için H veya h giriniz")
+
+     switch (cevap)
+
+      { 
+          case "e" : document.write ("Tekrar hoþgeldiniz");break;
+          case "E" : document.write ("Tekrar hoþgeldiniz");break;
+
+          //yapýlmasý istenen iþlemler
+          
+          case "h": document.write ("Bizi tercih ettiðiniz çin teþekkürler"); break;
+          case "H" :document.write ("Bizi tercih ettiðiniz çin teþekkürler"); break;
+          
+          default: document.write ("Böyle bir cevap yok");break;
+           //Çýkýlmasý istendiði için döngüyü kesmek için break komutunu kullanýyoruz.
+      }
+  
+
+  </script>
+  </body>
+</html>
+

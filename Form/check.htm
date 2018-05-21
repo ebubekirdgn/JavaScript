@@ -1,0 +1,32 @@
+<HTML>
+<HEAD>
+<title>Select</title>
+<SCRIPT LANGUAGE = "JavaScript1.2">
+
+function secim(secilen)
+   { 
+    return secilen.options[secilen.selectedIndex].value;
+   }
+
+function merhaba()
+   {
+     alert ("Butonu tikladiniz");
+   }
+</SCRIPT>
+</HEAD>
+
+<BODY>
+<FORM name="soru">
+<p><SELECT NAME="firma">
+<OPTION value="Bilemediniz Yazilim">Microsoft</OPTION>
+<OPTION value="Bilemediniz Yazilim">Borland</OPTION>
+<OPTION value="Bilemediniz Yazilim">Adobe</OPTION></P>
+<OPTION value="Tebrikler Bildiniz">Compaq</OPTION></P><br>
+<input type=button value="Bunlardan hangisi bilgisayar ureticisidir" onClick="alert(secim(this.form.firma))">
+
+</FORM>
+
+<input type="button" name="deneme" value="deneme" onClick=merhaba()>
+
+</BODY>
+</HTML>

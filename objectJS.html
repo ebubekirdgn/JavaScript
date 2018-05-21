@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>JavaScript</title>
+    </head>
+    <body>
+
+        <h3>Javascripte nesne tabanlı bir programlama dilidir.Ancak nesne yönelimli bir programlama dili değildir.</h3><br>
+         <p>Nesne tabanlı programlama nedir? </p> <br>
+
+         <p>Bizim bu objelerden herhangi bir alt obj , yani herhangi bir inheritance işlemi yapamayız.Polimorfizm işlemi yapamayız mesela. </p>
+        
+        <b>Console bakınız.</b>
+
+        <script>
+            /// 1.yöntem obje oluşturmak için
+         var calisan = 
+         {
+             isim:"Ebubekir",
+             soyisim :"Dogan",
+             yas:24,
+             diller : ["java","Js","C#","Php"],
+             adres :{
+                 cadde:"Camlık",
+                 sokak:"1234",
+                 daire:1
+             },
+             isimBilgileri : function()
+             {
+                 return  "İsim :" + this.isim + "Soyisim :" + this.soyisim; 
+             }
+         };
+
+         console.log(calisan.isim);
+         console.log(calisan.soyisim);
+         console.log(calisan.yas);
+         console.log(calisan.diller);
+         console.log(calisan.adres.daire); // seklinde diğer nesnelere de ulaşabiliriz.
+         console.log(calisan.isimBilgileri());
+
+
+         /// 2.yöntem obje oluşturmak için
+
+         var worker  =new Object();
+
+         worker.name = "Ebubekir";
+         worker.surname = "Dogan";
+         worker.WorkerKnowledge = function()
+         {
+           return "Name : " + this.name + "Surname : " + this.surname;
+         }         
+        console.log(worker.name);
+        console.log(worker.surname);
+        console.log(worker.WorkerKnowledge());
+        
+        
+        
+        </script>
+
+        
+
+    </body>
+</html>

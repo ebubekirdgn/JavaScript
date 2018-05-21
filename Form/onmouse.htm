@@ -1,0 +1,35 @@
+<html>
+<head><title>OnMouseOver</title>
+<script language="javascript">
+
+function altavista()
+  {document.yazi.mesaj.value="En unlu web motorlarindan biri" }
+
+function altavistasil()
+  { document.yazi.mesaj.value="" }
+
+function yahoo()
+  { document.yazi.mesaj.value="En unlulerden bir tane daha" }
+
+function yahoosil()
+  {document.yazi.mesaj.value="" }
+
+function hotbot()
+  {document.yazi.mesaj.value="Ve bir tanesi daha" }
+
+function hotbotsil()
+  {document.yazi.mesaj.value="" }
+
+</script>
+</head>
+<body>
+
+<a href="www.altavista.com" onMouseOver="altavista()" onMouseOut ="altavistasil()"> Altavista</a><br>
+<a href="www.yahoo.com" onMouseOver="yahoo()" onMouseOut="yahoosil()">Yahoo</a><br>
+<a href="www.hotbot.com" onMouseOver="hotbot()" onMouseOut="hotbotsil()">Hotbot</a><p>
+<form name="yazi">
+<input type="text" name="mesaj" value="ntbmyo" size="50">
+</form>
+</body>
+</html>
+

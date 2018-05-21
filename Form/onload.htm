@@ -1,0 +1,28 @@
+<html>
+<head><title>onLoad onUnLoad</title>
+<script language="javascript">
+function hata()
+{ 
+alert("ara bulursun belki :))))"); 
+}
+
+function hosgeldiniz()
+  {
+   alert("hoþgeldin ehlen ve sehlen");
+  
+   }
+
+function gulegule()
+{
+alert("AEO");
+}
+</script>
+</head>
+<img src="resim.gif" onAbort="alert("Resim harita dosyasý tam olarak yüklenemedi. Ýlgili resim bir harita olduðu için yüklenmesini tavsiye ederiz.')">
+<img src="resim.gif" onError="alert("Resim dosyasý tam olarak yüklenemedi')">
+<body onLoad="hosgeldiniz()" onUnLoad="gulegule()" onError="hata">
+</body>
+</html>
+
+
+
